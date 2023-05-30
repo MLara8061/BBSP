@@ -15,6 +15,10 @@
 		7D4752682A1C443F003B1018 /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4752672A1C443F003B1018 /* TransferView.swift */; };
 		7DD9702E2A170818007BE49C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD9702D2A170818007BE49C /* Login.swift */; };
 		C14EF14E2A204CEA00C65CB9 /* showCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14EF14D2A204CE900C65CB9 /* showCards.swift */; };
+		C17812012A25773200C60BB7 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C17811FF2A25773200C60BB7 /* UserModel.xcdatamodeld */; };
+		C17812032A25783F00C60BB7 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17812022A25783F00C60BB7 /* UserController.swift */; };
+		C17812052A25814700C60BB7 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17812042A25814700C60BB7 /* UserViewModel.swift */; };
+		C17812072A25845900C60BB7 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17812062A25845900C60BB7 /* UsersView.swift */; };
 		C1E828432A25542D00960EC5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E828412A2553E900960EC5 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,10 @@
 		7D4752672A1C443F003B1018 /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
 		7DD9702D2A170818007BE49C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		C14EF14D2A204CE900C65CB9 /* showCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showCards.swift; sourceTree = "<group>"; };
+		C17812002A25773200C60BB7 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		C17812022A25783F00C60BB7 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		C17812042A25814700C60BB7 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		C17812062A25845900C60BB7 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		C1E828412A2553E900960EC5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +106,7 @@
 		7D05442E2A16F72F00B4848E /* OURBANK */ = {
 			isa = PBXGroup;
 			children = (
+				C17811FE2A25770900C60BB7 /* USER */,
 				C1E828462A2554F200960EC5 /* HOME */,
 				C1E828452A2554B600960EC5 /* Preview Content */,
 				7D4752652A1C2F8C003B1018 /* MovementsView.swift */,
@@ -132,6 +141,17 @@
 				7DD9702D2A170818007BE49C /* Login.swift */,
 			);
 			path = LOGIN;
+			sourceTree = "<group>";
+		};
+		C17811FE2A25770900C60BB7 /* USER */ = {
+			isa = PBXGroup;
+			children = (
+				C17811FF2A25773200C60BB7 /* UserModel.xcdatamodeld */,
+				C17812022A25783F00C60BB7 /* UserController.swift */,
+				C17812042A25814700C60BB7 /* UserViewModel.swift */,
+				C17812062A25845900C60BB7 /* UsersView.swift */,
+			);
+			path = USER;
 			sourceTree = "<group>";
 		};
 		C1E8283D2A2551CA00960EC5 /* TRANSFERS */ = {
@@ -293,11 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17812012A25773200C60BB7 /* UserModel.xcdatamodeld in Sources */,
 				7D4752682A1C443F003B1018 /* TransferView.swift in Sources */,
+				C17812032A25783F00C60BB7 /* UserController.swift in Sources */,
 				C14EF14E2A204CEA00C65CB9 /* showCards.swift in Sources */,
 				7D0544302A16F72F00B4848E /* OURBANKApp.swift in Sources */,
+				C17812072A25845900C60BB7 /* UsersView.swift in Sources */,
 				7DD9702E2A170818007BE49C /* Login.swift in Sources */,
 				C1E828432A25542D00960EC5 /* ProfileView.swift in Sources */,
+				C17812052A25814700C60BB7 /* UserViewModel.swift in Sources */,
 				7D4752662A1C2F8C003B1018 /* MovementsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,6 +645,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C17811FF2A25773200C60BB7 /* UserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C17812002A25773200C60BB7 /* UserModel.xcdatamodel */,
+			);
+			currentVersion = C17812002A25773200C60BB7 /* UserModel.xcdatamodel */;
+			path = UserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7D0544242A16F72F00B4848E /* Project object */;
 }

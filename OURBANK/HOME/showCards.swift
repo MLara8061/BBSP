@@ -7,10 +7,12 @@
 import SwiftUI
 
 struct ShowCardsView: View {
+    @State var user = UserDefaults.standard.string(forKey: "user") ?? "Albert"
+    @State var pass = UserDefaults.standard.string(forKey: "pass") ?? ""
     var body: some View {
         VStack() {
             HStack() {
-                Text("Welcome, Mr. Albert")
+                Text("Welcome, Mr. "+user)
                 Spacer()
                 Image(systemName: "person.crop.circle.fill")
                     .resizable()
@@ -71,6 +73,11 @@ struct ShowCardsView: View {
         }
         .padding(.horizontal, 30)
         .padding(.top, 20)
+        .onAppear{
+            print("Prueba")
+            user = UserDefaults.standard.string(forKey: "user") ?? "Albert"
+            pass = UserDefaults.standard.string(forKey: "pass") ?? "NA"
+        }
     }
 }
 
